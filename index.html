@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A HumanoId Table TEnnis Robot (HITTER) via Hierarchical Planning and Learning">
+  <meta name="keywords" content="Humanoid, Table Tennis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HITTER</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+    <div class="hero-video"
+      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
+      <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+        <source src=" ./static/videos/teaser.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="overlay"></div>
+
+    <div
+      style="position: absolute; bottom: 20px; right: 20px; padding: 10px 15px; border-radius: 8px; max-width: 200px; z-index: 10;">
+      <img src="./static/images/UCB_logo.png" alt="UC Berkeley" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="hero-head is-hidden-mobile">
+      <header class="navbar">
+        <div class="container is-size-5">
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item pl-4 pr-4" href=""
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+                <span class="icon" style="margin-right:5px;">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title is-size-1-mobile"
+          style="font-size: 7rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+          HITTER
+          <img src="./static/images/favicon.png" alt="HITTER" style="width: 10rem; height: 10rem; margin-left: 0rem; vertical-align: middle;">
+        </h1>
+        <h1 class="subtitle is-1 publication-title is-size-4-mobile"
+          style="font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+          A <span style="color: #FDB515;">H</span>umano<span style="color: #FDB515;">I</span>d <span
+            style="color: #FDB515;">T</span>able <span style="color: #FDB515;">TE</span>nnis <span
+            style="color: #FDB515;">R</span>obot
+        </h1>
+        <h1 class="subtitle is-1 publication-title is-size-4-mobile"
+          style="font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+          via Hierarchical Planning and Learning
+        </h1>
+        <p style="font-size: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+          <a href="https://suz-tsinghua.github.io/">Zhi Su</a>,
+          <a href="https://bikezhang106.github.io/">Bike Zhang</a>,
+          <a href="https://www.linkedin.com/in/nima-rahmanian-367b871aa/">Nima Rahmanian</a>,
+          <a href="https://si-lhouette.github.io/">Yuman Gao</a>,
+          <a href="https://qiayuanl.github.io/">Qiayuan Liao</a>,
+          <a href="https://www.linkedin.com/in/caitlin-regan-333980219/">Caitlin Regan</a>,
+          <a href="https://hybrid-robotics.berkeley.edu/koushil/">Koushil Sreenath</a>,
+          <a href="https://people.eecs.berkeley.edu/~sastry/">S. Shankar Sastry</a>
+      </div>
+      </p>
+    </div>
+    </div>
+
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Video</h2>
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <div class="publication-video"
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe src="https://www.youtube.com/embed/tOfPKW6D3gE" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Abstract</h2>
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <div class="content has-text-justified">
+            <p class="abstract-text" style="font-size: 0.95rem; line-height: 1.5;">
+              Humanoid robots have recently achieved impressive progress in locomotion and whole-body control, yet they
+              remain constrained in tasks that demand rapid interaction with dynamic environments through manipulation.
+              Table tennis exemplifies such a challenge: with ball speeds exceeding 5 m/s, players must perceive,
+              predict,
+              and act within sub-second reaction times, requiring both agility and precision. To address this, we
+              present a
+              hierarchical framework for humanoid table tennis that integrates a model-based planner for ball trajectory
+              prediction and racket target planning with a reinforcement learning–based whole-body controller. The
+              planner
+              determines striking position, velocity and timing, while the controller generates coordinated arm and leg
+              motions that mimic human strikes and maintain stability and agility across consecutive rallies. Moreover,
+              to
+              encourage natural movements, human motion references are incorporated during training. We validate our
+              system
+              on a general-purpose humanoid robot, achieving up to 106 consecutive shots with a human opponent and
+              sustained
+              exchanges against another humanoid. These results demonstrate real-world humanoid table tennis with
+              sub-second
+              reactive control, marking a step toward agile and interactive humanoid behaviors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Method</h2>
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <div class="content has-text-centered">
+            <img src="./static/images/method.png" alt="Method Overview"
+              style="width: 100%; height: auto; border: 1px solid #bbb; border-radius: 10px;">
+            <p class="has-text-centered" style="margin-top: 1rem; font-style: italic; color: #666;">
+              Our hierarchical framework combined a model-based planner with a learning-based controller
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Playing 106 Consecutive Shots with a Human Opponent</h2>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video autoplay loop muted playsinline src="./static/videos/106shots.mp4"
+            poster="./static/videos/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Playing with Different People</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <video autoplay loop muted playsinline src="./static/videos/more_people/9.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/7.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/8.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/10.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/1.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/2.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/3.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/4.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/5.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/more_people/6.mp4"
+          poster="./static/videos/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </section>
+
+<!-- 
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+    </div>
+  </section> -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a> and
+          <a href="https://beyondmimic.github.io/"><span class="beyondmimic">BeyondMimic</span></a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
